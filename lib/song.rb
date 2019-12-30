@@ -54,6 +54,7 @@ class Song
   end
   
   def self.create_from_filename(filename)
+<<<<<<< HEAD
     # result = self.create_from_filename(filename)
     # song = self.create
     # song.name = result.name
@@ -68,4 +69,10 @@ class Song
   def self.destroy_all
     self.all.clear
   end
+=======
+    song = self.create_from_filename(filename)
+    song.save
+    song
+  end
+>>>>>>> 134911d7827cb7cfaa8c1e17941e948c7358d852
 end
